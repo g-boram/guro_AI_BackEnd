@@ -64,7 +64,8 @@ public class BoardController {
 		return "redirect:boardList";
 	}
 	
-	// 글삭제 리퀘스트 맵핑 @RequestMapping("/boardDelete")
+	// 글삭제 리퀘스트 맵핑 
+	@RequestMapping("/boardDelete")
 	public String boardDelete(HttpServletRequest req) {
 		try {
 			req.setCharacterEncoding("UTF-8");
